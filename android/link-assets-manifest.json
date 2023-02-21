@@ -1,0 +1,25 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/font/Kalam-Bold.ttf",
+      "sha1": "2a559015d425e2197d24dd64ec5f575b713c008f"
+    },
+    {
+      "path": "assets/font/Kalam-Light.ttf",
+      "sha1": "309afbdc02fed52d623f9870114f826f43623da7"
+    },
+    {
+      "path": "assets/font/Kalam-Regular.ttf",
+      "sha1": "8780563680372a86968c46c50cba05143654fe49"
+    },
+    {
+      "path": "assets/font/LibreBaskerville-Bold.ttf",
+      "sha1": "f8081cbeceb2e69fdffca2348b2c9e0933cd52b5"
+    },
+    {
+      "path": "assets/font/LibreBaskerville-Regular.ttf",
+      "sha1": "ed706d27473a09536d94fed8fee4809fda713759"
+    }
+  ]
+}
