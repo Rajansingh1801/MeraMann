@@ -7,9 +7,18 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import React from 'react';
+import React, {useState} from 'react';
 
 const Login = ({navigation}) => {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const submit = () => {
+    if (username === 'rajansinghnahne@gmail.com' && password === '12345') {
+      navigation.navigate('MainHome');
+    } else {
+      alert('plase Enter valid detail');
+    }
+  };
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -22,17 +31,29 @@ const Login = ({navigation}) => {
             <TextInput
               placeholder="Enter Your Email Address"
               style={styles.input}
+              onChangeText={text => {
+                setUsername(text);
+              }}
+              value={username}
             />
             <TextInput
               placeholder="Enter Your Password"
               secureTextEntry={true}
               style={[styles.input, {marginTop: 8}]}
+              onChangeText={pass => {
+                setPassword(pass);
+              }}
+              value={password}
             />
           </KeyboardAvoidingView>
           <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
             <TouchableOpacity
-              style={styles.btn}
-              onPress={() => navigation.navigate('MainHome')}>
+              style={[
+                styles.btn,
+                {backgroundColor: username && password ? 'black' : 'gray'},
+              ]}
+              onPress={() => submit()}
+              disabled={!username || !password}>
               <Text style={styles.txt}>Log In</Text>
             </TouchableOpacity>
             <TouchableOpacity
