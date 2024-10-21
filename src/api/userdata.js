@@ -1,16 +1,5 @@
 export const userData = [
   {
-    id: 1,
-    profilePicture: require('../../assets/images/person/abdl.png'),
-    userName: 'Abdul Ansari',
-    description: 'hello world',
-    photo: require('../../assets/images/2159.jpg'),
-    date: '5 min',
-    like: 10,
-    Comment: 10,
-    message: 'hello',
-  },
-  {
     id: 2,
     profilePicture: require('../../assets/images/person/shar.png'),
     userName: 'Shahrukh khan',
